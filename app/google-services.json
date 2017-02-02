@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "631028425757",
+    "firebase_url": "https://hachathonrbteam-98875.firebaseio.com",
+    "project_id": "hachathonrbteam-98875",
+    "storage_bucket": "hachathonrbteam-98875.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:631028425757:android:73b329874e9c8f7d",
+        "android_client_info": {
+          "package_name": "br.com.thebighackathon"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "631028425757-snaha3cdkhcsjr108gd6lv2h92j4988g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA4JziZ8vc4xbPsDyuI-nvOlYXT5NxVQFo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
