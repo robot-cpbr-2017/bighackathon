@@ -12,55 +12,100 @@
     android:background="@color/background"
     tools:context="br.com.thebighackathon.EcoTakeActivity">
 
-        <LinearLayout
+
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RelativeLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
 
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/title"
+                    android:textColor="@color/title"
+                    android:textSize="@dimen/title"
+                    android:layout_marginTop="5dp"
+                    android:paddingRight="15dp"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/folha"
+                    android:id="@+id/folha"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/people"
+                    android:paddingLeft="20dp"
+                    android:id="@+id/imageView" />
+            </LinearLayout>
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/barra"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="80dp"
+                android:id="@+id/barra" />
+
+
             <TextView
-                android:id="@+id/title"
+                android:id="@+id/Texto"
+                android:layout_below="@+id/barra"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/sub_titulo"
+                android:textSize="35dp"
+                android:textColor="@color/sub_titulo"/>
+
+            <TextView
+                android:id="@+id/texto_concientizacao"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/title"
+                android:text="@string/texto_consientizacao"
+                android:layout_below="@+id/Texto"
+                android:layout_marginTop="12dp"
+                android:textSize="25dp"
+                android:textColor="@color/texto_concientizaco"/>
+
+            <ImageView
+                android:id="@+id/world"
+                android:layout_below="@id/texto_concientizacao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:src="@drawable/word"/>
+
+            <TextView
+                android:id="@+id/sub_texto_concientizacao"
+                android:layout_below="@id/world"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/sub_titulo_concientizacao"
                 android:textColor="@color/title"
-                android:textSize="@dimen/title"
-                android:layout_marginTop="5dp"
-                android:paddingRight="15dp"/>
+                android:textSize="20dp"/>
 
-            <ImageView
+            <TextView
+                android:id="@+id/link1"
+                android:layout_below="@+id/sub_texto_concientizacao"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                app:srcCompat="@drawable/folha"
-                android:id="@+id/folha"/>
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/people"
-                android:paddingLeft="20dp"
-                android:id="@+id/imageView" />
-        </LinearLayout>
-
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/barra"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="80dp"
-        android:id="@+id/barra" />
-
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/barra">
-
-        <TextView
-            android:id="@+id/Texto"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginTop="20dp"
-            android:text="@string/sub_titulo"
-            android:textSize="35dp"
-            android:textColor="@color/sub_titulo"/>
-    </LinearLayout>
-
+                android:layout_marginTop="15dp"
+                android:text="Ágenda 21"
+                android:textColor="@color/links"
+                android:textSize="@dimen/links"/>
+        </RelativeLayout>
+    </ScrollView>
 </RelativeLayout>
