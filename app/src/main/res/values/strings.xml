@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">The BIg Hackathon</string>
     <string name="title">Pegada Ecológica</string>
+    <string name="sub_titulo">A tua pegada encontra-se entre 4 e 6hs</string>
 </resources>
